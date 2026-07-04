@@ -1,13 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <title>WDD131</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Fundamentos da Web Dinâmica - Katherine Montanhaur</title>
+
+    <meta name="description"
+        content="WDD 131 – Fundamentos da Web Dinâmica. Katherine Jannet Sotelo Gordillo Montanhaur. Página inicial do curso.">
+
+    <meta name="author" content="Katherine Jannet Sotelo Gordillo Montanhaur">
+
+    <link rel="stylesheet" href="estilos/base.css">
+
+    <script src="obterdatas/obterdatas.js" defer></script>
+
 </head>
 
 <body>
-    <h1>Hello WDD131</h1>
+
+    <header>
+        <h1>WDD 131: Fundamentos da Web Dinâmica</h1>
+
+        <nav>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=por&id=p7#p7"
+                target="_blank">
+                Escritura
+            </a>
+            <a href="#">Projeto Final</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Katherine Montanhaur</h1>
+
+        <section class="card">
+            <h3>Sobre Mim</h3>
+            <div class="about">
+                <img src="imagens/profile.jpg" alt="Foto de Katherine" class="profile">
+                <p>
+                    Meu nome é Katherine Jannet Sotelo Gordillo Montanhaur.
+                    Moro em Campinas, São Paulo, Brasil.
+                    Trabalho como Senior Supply Chain - LA.
+                    Busco formas inovadoras de trabalhar utilizando a tecnologia.
+                </p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3>Recursos Web Dev</h3>
+
+            <ul>
+                <li>
+                    <a href="https://developer.mozilla.org/" target="_blank">
+                        MDN Web Docs
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/" target="_blank">
+                        W3Schools
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://css-tricks.com/" target="_blank">
+                        css Tricks
+                    </a>
+                </li>
+                <li>
+                    <a href="https://codepen.io/" target="_blank">
+                        CodePen
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span>
+            Katherine Montanhaur | Brasil
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 
 </html>
