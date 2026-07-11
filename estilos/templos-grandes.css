@@ -1,0 +1,33 @@
+/* Estilos para telas grandes */
+
+@media screen and (min-width: 700px) {
+
+    /* Header em linha */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h2 {
+        margin-bottom: 0;
+    }
+
+    /* Esconde o botão hambúrguer no computador */
+    #menu {
+        display: none;
+    }
+
+    /* Mostra o menu de navegação */
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    /* Galeria com várias colunas */
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
