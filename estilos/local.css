@@ -21,6 +21,7 @@ body {
 }
 
 
+/* Cabeçalho */
 header {
     background-color: var(--primary-color);
     color: var(--white-color);
@@ -41,12 +42,17 @@ h1::after {
     width: 80px;
     height: 4px;
     margin: 0.5rem auto;
-    background-color: var(--primary-color);
+    background-color: var(--white-color);
 }
 
 
+/* Conteúdo principal */
 main {
+    max-width: 1200px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
 
@@ -95,6 +101,7 @@ section li {
 }
 
 
+/* Rodapé */
 footer {
     background-color: var(--dark-color);
     color: var(--white-color);
@@ -109,23 +116,22 @@ footer p {
 }
 
 
+/* Layout para telas maiores */
 @media screen and (min-width: 768px) {
 
     main {
-        max-width: 1200px;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+
+    picture {
+        grid-column: 1 / -1;
     }
 
 
     section {
-        width: 45%;
-        display: inline-block;
-        vertical-align: top;
-    }
-
-
-    picture img {
-        max-width: 1200px;
-        margin: 0 auto;
+        margin: 0.5rem;
     }
 
 }
