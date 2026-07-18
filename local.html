@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Peru | Página do País - WDD 131</title>
+
+    <meta name="description" content="Página do país Peru desenvolvida para a atividade WDD 131 da BYU-Idaho.">
+
+    <meta name="author" content="Jannet">
+
+    <link rel="stylesheet" href="estilos/local.css">
+
+    <script src="scripts/local.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Peru</h1>
+    </header>
+
+    <main>
+
+        <picture>
+            <source srcset="imagens/peru-large.webp" media="(min-width: 768px)">
+
+            <img src="imagens/peru-small.webp" alt="Machu Picchu, antigo sítio arqueológico dos Incas no Peru"
+                width="600" height="400" decoding="async">
+        </picture>
+
+        <section class="data">
+
+            <h2>Dados</h2>
+
+            <ul>
+                <li><strong>Área:</strong> 1.285.216 km²</li>
+                <li><strong>População:</strong> Aproximadamente 34 milhões</li>
+                <li><strong>Capital:</strong> Lima</li>
+                <li><strong>Idiomas:</strong> Espanhol, Quechua e Aimará</li>
+                <li><strong>Moeda:</strong> Sol Peruano (PEN)</li>
+                <li><strong>Fuso Horário:</strong> UTC-5</li>
+            </ul>
+
+        </section>
+
+        <section class="weather">
+
+            <h2>Clima</h2>
+
+            <img src="imagens/weather.svg" alt="Ícone representando o clima" class="weather-icon">
+
+            <ul>
+                <li><strong>Temperatura:</strong> 18 °C</li>
+                <li><strong>Condições:</strong> Parcialmente nublado</li>
+                <li><strong>Vento:</strong> 10 km/h</li>
+                <li>
+                    <strong>Sensação térmica:</strong>
+                    <span id="windchill"></span>
+                </li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © <span id="currentyear"></span> Jannet
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
