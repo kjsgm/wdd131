@@ -36,16 +36,6 @@ h1 {
 }
 
 
-h1::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 4px;
-    margin: 0.5rem auto;
-    background-color: var(--white-color);
-}
-
-
 /* Conteúdo principal */
 main {
     max-width: 1200px;
@@ -101,22 +91,13 @@ section li {
 }
 
 
-/* Rodapé */
-footer {
-    background-color: var(--dark-color);
-    color: var(--white-color);
-    text-align: center;
-    padding: 1rem;
-    margin-top: 1rem;
+/* Emoticon do clima aparece somente em telas maiores */
+.weather-title::after {
+    content: "";
+    display: none;
 }
 
 
-footer p {
-    margin: 0.5rem;
-}
-
-
-/* Layout para telas maiores */
 @media screen and (min-width: 768px) {
 
     main {
@@ -134,4 +115,33 @@ footer p {
         margin: 0.5rem;
     }
 
+
+    /* Esconde o SVG no desktop */
+    .weather-icon {
+        display: none;
+    }
+
+
+    /* Mostra o emoticon no desktop */
+    .weather-title::after {
+        content: "🌤️";
+        display: inline;
+        margin-left: 10px;
+    }
+
+}
+
+
+/* Rodapé */
+footer {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+
+footer p {
+    margin: 0.5rem;
 }

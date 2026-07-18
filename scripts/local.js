@@ -15,7 +15,8 @@ document.querySelector("#lastModified").textContent =
 const temperature = 18;
 const windSpeed = 10;
 
-function calculateWindChill(temperature, windSpeed) {
+
+function calcularSensacaoTermica(temperature, windSpeed) {
 
     return (
         13.12 +
@@ -23,13 +24,14 @@ function calculateWindChill(temperature, windSpeed) {
         11.37 * Math.pow(windSpeed, 0.16) +
         0.3965 * temperature * Math.pow(windSpeed, 0.16)
     ).toFixed(1);
+
 }
 
 
 if (temperature <= 10 && windSpeed > 4.8) {
 
     document.querySelector("#windchill").textContent =
-        `${calculateWindChill(temperature, windSpeed)} °C`;
+        `${calcularSensacaoTermica(temperature, windSpeed)} °C`;
 
 } else {
 
