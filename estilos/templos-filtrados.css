@@ -111,6 +111,27 @@ figcaption {
     content: "✖";
 }
 
+/* Cards dos templos */
+#temple-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+#temple-container article {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#temple-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* Rodapé */
 footer {
     background-color: #1b5e20;
