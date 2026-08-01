@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de avaliação de produtos.">
+    <meta name="author" content="Seu Nome">
+
+    <title>Formulário de Avaliação de Produto</title>
+
+    <link rel="stylesheet" href="estilos/formulario.css">
+
+    <script src="scripts/formulario.js" defer></script>
+    <script src="scripts/obterdatas.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Formulário de Avaliação de Produto</h1>
+    </header>
+
+    <main>
+        <form method="get" action="avaliacao.html">
+            <div>
+                <label for="produto">
+                    Nome do Produto <span>*</span>
+                </label>
+
+                <select id="produto" name="produto" required>
+                    <option value="" disabled selected>
+                        Selecione um Produto...
+                    </option>
+                </select>
+            </div>
+
+            <fieldset>
+                <legend>Classificação Geral <span>*</span></legend>
+            
+                <label for="nota1">
+                    <input type="radio" id="nota1" name="classificacao" value="1" required>
+                    ☆
+                </label>
+            
+                <label for="nota2">
+                    <input type="radio" id="nota2" name="classificacao" value="2">
+                    ☆☆
+                </label>
+            
+                <label for="nota3">
+                    <input type="radio" id="nota3" name="classificacao" value="3">
+                    ☆☆☆
+                </label>
+            
+                <label for="nota4">
+                    <input type="radio" id="nota4" name="classificacao" value="4">
+                    ☆☆☆☆
+                </label>
+            
+                <label for="nota5">
+                    <input type="radio" id="nota5" name="classificacao" value="5">
+                    ☆☆☆☆☆
+                </label>
+            </fieldset>
+
+            <div>
+                <label for="instalacao">
+                    Data de Instalação <span>*</span>
+                </label>
+            
+                <input
+                type="date"
+                id="instalacao"
+                name="instalacao"
+                required>
+            </div>
+
+            <fieldset>
+                <legend>Recursos Úteis</legend>
+            
+                <label for="durabilidade">
+                    <input type="checkbox" id="durabilidade" name="recursos" value="Durabilidade">
+                    Durabilidade
+                </label>
+            
+                <label for="facilidade">
+                    <input type="checkbox" id="facilidade" name="recursos" value="Facilidade de Uso">
+                    Facilidade de Uso
+                </label>
+            
+                <label for="desempenho">
+                    <input type="checkbox" id="desempenho" name="recursos" value="Desempenho">
+                    Desempenho
+                </label>
+            
+                <label for="design">
+                    <input type="checkbox" id="design" name="recursos" value="Design">
+                    Design
+                </label>
+            </fieldset>
+
+            <div>
+                <label for="avaliacao">
+                    Avaliação Escrita
+                </label>
+            
+                <textarea id="avaliacao" name="avaliacao" rows="5"></textarea>
+            </div>
+
+            <div>
+                <label for="usuario">
+                    Nome de Usuário
+                </label>
+            
+                <input type="text" id="usuario" name="usuario">
+            </div>
+
+            <div>
+                <input class="botao" type="submit" value="Enviar Avaliação">
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Katherine Montanhaur - Brasil</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
