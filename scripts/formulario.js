@@ -26,18 +26,25 @@ const produtos = [
     }
 ];
 
+
 const selectProduto = document.querySelector("#produto");
 
-produtos.forEach(produto => {
-    const option = document.createElement("option");
+if (selectProduto) {
+    produtos.forEach(produto => {
+        const option = document.createElement("option");
 
-    option.value = produto.id;
-    option.textContent = produto.nome;
+        option.value = produto.id;
+        option.textContent = produto.nome;
 
-    selectProduto.appendChild(option);
-});
+        selectProduto.appendChild(option);
+    });
+}
+
+
 const formulario = document.querySelector("form");
 
-formulario.addEventListener("submit", () => {
-    localStorage.setItem("novaAvaliacao", "true");
-});
+if (formulario) {
+    formulario.addEventListener("submit", () => {
+        localStorage.setItem("novaAvaliacao", "true");
+    });
+}

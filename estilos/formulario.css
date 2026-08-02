@@ -8,11 +8,13 @@
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
+    cursor: pointer;
 }
 
 .botao:hover {
     background-color: #3c6145;
 }
+
 
 body {
     font-family: Arial, sans-serif;
@@ -22,15 +24,18 @@ body {
     padding: 1rem;
 }
 
+
 main {
     max-width: 600px;
     margin: 0 auto;
 }
 
+
 h1 {
     color: #4F7C59;
     text-align: center;
 }
+
 
 form {
     background-color: white;
@@ -38,11 +43,14 @@ form {
     border-radius: 10px;
 }
 
+
 label {
     display: block;
     margin-top: 1rem;
     font-weight: bold;
+    cursor: pointer;
 }
+
 
 input,
 select,
@@ -55,9 +63,11 @@ textarea {
     box-sizing: border-box;
 }
 
+
 textarea {
     resize: vertical;
 }
+
 
 fieldset {
     border: none;
@@ -65,10 +75,12 @@ fieldset {
     padding: 0;
 }
 
+
 legend {
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
+
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -76,9 +88,6 @@ input[type="checkbox"] {
     margin-right: 0.5rem;
 }
 
-label {
-    cursor: pointer;
-}
 
 input.botao {
     width: 100%;
@@ -87,9 +96,11 @@ input.botao {
     font-size: 1rem;
 }
 
+
 input.botao:hover {
     background-color: #3c6145;
 }
+
 
 @media screen and (min-width: 768px) {
 
