@@ -32,18 +32,22 @@ const selectProduto = document.querySelector("#produto");
 
 if (selectProduto) {
 
-    produtos.forEach(produto => {
+    produtos.forEach((produto) => {
 
-        const option = document.createElement("option");
+        const opcao = document.createElement("option");
 
-        option.value = produto.id;
-        option.textContent = produto.nome;
+        opcao.value = produto.id;
+        opcao.textContent = produto.nome;
 
-        selectProduto.appendChild(option);
+        selectProduto.appendChild(opcao);
 
     });
 
+    // mantém a primeira opção como placeholder
+    selectProduto.selectedIndex = 0;
+
 }
+
 
 
 const formulario = document.querySelector("form");
