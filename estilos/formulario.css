@@ -7,9 +7,10 @@
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
+
 
 .botao:hover {
     background-color: #3c6145;
@@ -25,15 +26,19 @@ body {
 }
 
 
-main {
-    max-width: 600px;
-    margin: 0 auto;
+header {
+    text-align: center;
 }
 
 
 h1 {
     color: #4F7C59;
-    text-align: center;
+}
+
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 
@@ -92,7 +97,6 @@ input[type="checkbox"] {
 input.botao {
     width: 100%;
     border: none;
-    cursor: pointer;
     font-size: 1rem;
 }
 
@@ -108,16 +112,20 @@ input.botao:hover {
         padding: 2rem;
     }
 
+
     form {
         padding: 2rem;
     }
+
 
     header h1 {
         font-size: 2rem;
     }
 
+
     .botao {
         width: auto;
         padding: 0.75rem 2rem;
     }
+
 }
