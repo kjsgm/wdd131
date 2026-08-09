@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Organize as tarefas da semana com um checklist simples para a família.">
+    <meta name="author" content="Jannet">
+    <title>Planejamento | Organização Familiar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="estilos/base.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Organização Familiar</h1>
+        <p>Planejamento • Rotina • Equilíbrio</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="planejamento.html">Planejamento</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Planejamento da Semana</h2>
+
+            <p>
+                Use este checklist para organizar as tarefas da sua família.
+                Adicione o que precisa ser feito durante a semana e marque
+                as tarefas concluídas.
+            </p>
+
+            <form id="form-tarefa">
+                <label for="nova-tarefa">Nova tarefa</label>
+                <input type="text" id="nova-tarefa" name="nova-tarefa" required>
+
+                <button type="submit">Adicionar tarefa</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Minhas Tarefas</h2>
+
+            <ul id="lista-tarefas">
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Organização Familiar</p>
+        <a href="referencias.html">Referências</a>
+    </footer>
+
+    <script src="scripts/planejamento.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Recursos simples para ajudar famílias com o orçamento, a organização e atividades para crianças.">
+    <meta name="author" content="Jannet">
+    <title>Recursos | Organização Familiar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="estilos/base.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Organização Familiar</h1>
+        <p>Planejamento • Rotina • Equilíbrio</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="planejamento.html">Planejamento</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Orçamento Familiar</h2>
+
+            <p>
+                Ter uma visão simples das entradas e despesas pode ajudar
+                a família a tomar decisões sobre o orçamento.
+            </p>
+
+            <form id="form-orcamento">
+
+                <div>
+                    <label for="renda">Renda mensal</label>
+                    <input type="number" id="renda" name="renda" min="0" step="0.01" required>
+                </div>
+
+                <div>
+                    <label for="despesas">Despesas mensais</label>
+                    <input type="number" id="despesas" name="despesas" min="0" step="0.01" required>
+                </div>
+
+                <button type="submit">Calcular</button>
+
+            </form>
+
+            <p id="resultado-orcamento"></p>
+        </section>
+
+        <section>
+            <h2>Atividades para Crianças</h2>
+
+            <p>
+                Momentos simples em família podem ajudar a criar boas lembranças
+                sem exigir grandes gastos.
+            </p>
+
+            <ul>
+                <li>Preparar uma receita simples em família.</li>
+                <li>Fazer uma caminhada ou passeio ao ar livre.</li>
+                <li>Montar um jogo ou quebra-cabeça juntos.</li>
+                <li>Organizar uma tarde de leitura.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Entre em Contato</h2>
+
+            <p>
+                Envie uma mensagem com sua dúvida ou sugestão sobre organização familiar.
+            </p>
+
+            <form id="form-contato">
+
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" autocomplete="name" required>
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Enviar mensagem</button>
+
+            </form>
+
+            <p id="mensagem-formulario"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Organização Familiar</p>
+        <a href="referencias.html">Referências</a>
+    </footer>
+
+    <script src="scripts/recursos.js"></script>
+
+</body>
+
+</html>
